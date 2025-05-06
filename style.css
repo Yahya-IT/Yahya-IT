@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+    
+    :root {
+        /* Colors */
+        --white-color: #fff;
+        --dark-color: #252525;
+        --primary-color: #3b141c;
+        --secondary-color: #f3961c;
+        --light-pink-color: #faf4f5;
+        --medium-gray-color: #ccc;
+      
+        /* Font size */
+        --font-size-s: 0.9rem;
+        --font-size-n: 1rem;
+        --font-size-m: 1.12rem;
+        --font-size-1: 1.5rem;
+        --font-size-xl: 2rem;
+        --font-size-xxl: 2.3rem;
+      
+         :root {
+        /* Font weights */
+        --font-weight-normal: 400;
+        --font-weight-medium: 500;
+        --font-weight-semibold: 600;
+        --font-weight-bold: 700;
+      
+        /* Border radius */
+        --border-radius-s: 8px;
+        --border-radius-m: 30px;
+        --border-radius-circle: 50%;
+      
+        /* Site max width */
+        --site-max-width: 1300px;
+      }
+      
+      
+
+}
+/* styling forr the whole site*/
+
+ul {
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+img{
+    width: 100%;
+}
+.section-content{
+    margin:0 auto;
+    padding:0 20px ;
+    max-width: var(--primary-color );
+}
+/*navbar styling*/
+header {
+  background: var(--primary-color) ;
+}
+.header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-text{
+    color: var(--white-color);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+
+
+}
+.navbar .nav-menu{
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .nav-menu .nav-link {
+    color: var(--white-color);
+    padding: 10px 18px;
+    color: var(--white-color);
+    font-size:var(--font-size-m);
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+}
+.navbar .nav-menu .nav-link :hover{
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Gallery section styles */
+.gallery-section{
+    padding: 50px 0 100px;
+}
+.gallery-section .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    
+    
+  }
+  
+  .gallery-section .gallery-list .gallery-item {
+    overflow: hidden;  
+    border-radius: var(--border-radius-s);
+      width: calc((100% /3) -32px);
+}
+  
+  .gallery-section .gallery-item .gallery-image {
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+    transition: 0.3s ease;
+  }
+
+  .gallery-section .gallery-item:hover .gallery-image
+  { 
+    transform: scale(1.3);
+
+  }
+  
+  /* Responsive: 2 columns for screens <= 1024px */
+  @media screen and (max-width: 1024px) {
+
+  }
+  
+
+
+/*responsive media query code for max width 900px*/
+  @media screen and (max-width:900px) {
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Menu section image styling */
+.menu-section .menu-list .menu-item .menu-image {
+    max-width: 200px;
+  }
+  .gallery-section .gallery-list {
+    gap: 30px;
+  }
+  
+  /* Gallery section responsive styling (possibly misplaced/typo) */
+  .gallery-section .gallery-list .gallery-item {
+    width: calc(100% /2 - 30px); 
+  }
+  
+  /* Responsive media query for screens up to 640px */
+  @media screen and (max-width: 640px) {
+    .menu-section .menu-list {
+      gap: 60px;
+    }
+  
+    .menu-section .menu-list .menu-item,
+    .gallery-section .gallery-list .gallery-item {
+      width: 100%;
+    }
+  }
+  
+  /* Testimonials section styling */
+  .testimonials-section .slider-wrapper {
+    margin: 0 0 30px;
+  }
+  
+
+ .gallery-section .gallery-list .gallery-item{
+    width: calc(100%/2-30px);
+ }    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
