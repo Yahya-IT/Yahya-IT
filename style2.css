@@ -1,0 +1,64 @@
+
+/* Gallery section styles */
+.gallery-section{
+    padding: 50px 0 100px;
+}
+.gallery-section .gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+       
+  }
+  
+  .gallery-section .gallery-list .gallery-item {
+    overflow: hidden;  
+    border-radius: var(--border-radius-s);
+      width: calc(100% / 3 - 32px);
+}
+  
+  .gallery-section .gallery-item .gallery-image {
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+    transition: 0.3s ease;
+  }
+
+  .gallery-section .gallery-item:hover .gallery-image
+  { 
+    transform: scale(1.3);
+
+  }
+
+  /* go  to */
+   @media screen and ( max-width :900px) {
+    
+    /* before menu section menu list menu item menu image put this under it */
+    .gallery-section .gallery-list{
+        gap: 30px;
+    }
+
+    .gallery-section .gallery-list .gallery-item {
+        width: calc(100% / 2 - 30px);
+    }
+
+
+
+
+    
+    
+  }
+
+
+
+  /* then go to */
+  
+  @media screen and (max-width:640) {
+/*     
+    there is a first menu section menu list skipped then 
+    the secound row u find menu section and menu list and menu item make comma the write */
+
+
+    .gallery-section .gallery-list .gallery-item{
+        width:100%;
+    }
+  }
